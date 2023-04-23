@@ -46,10 +46,10 @@ class _HomeScreenState extends State<HomeScreen> {
               )
             : Consumer<PopularArticlesProvider>(
                 builder: (context, value, child) {
-                if (value.popularArticles.isEmpty) {
+                if (value.popularArticles.isEmpty) {   /*If there are no articles to display, it shows a message "No articles found."*/
                   return const Center(child: Text('No articles found.'));
                 } else {
-                  return ListView.separated(
+                  return ListView.separated(     /*ListView that displays the popular articles fetched using Consumer*/
                       itemCount: value.popularArticles.length ?? 0,
                       separatorBuilder: (context, int index) {
                         return const Divider();
@@ -57,7 +57,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       itemBuilder: (BuildContext context, int index) {
                         return Padding(
                           padding: const EdgeInsets.only(top: 10,bottom: 10),
-                          child: ArticleCard(
+                          child: ArticleCard(            /*ArticleCard widget for each popular article*/
                             title: value.popularArticles[index].title,
                             byline: value.popularArticles[index].byline,
                             publishedDate:
@@ -66,7 +66,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => NewsDetailScreen(
+                                      builder: (context) => NewsDetailScreen(       /*NewsDetailScreen widget that displays more information about the article.*/
                                             popularArticles:
                                                 value.popularArticles[index],
                                           )));

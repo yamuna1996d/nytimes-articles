@@ -4,6 +4,9 @@ import '../Widgets/TitleBold500.dart';
 import '../constraints/constraints.dart';
 
 class NewsDetailScreen extends StatelessWidget {
+  /*Results object as input, which contains the details of the article.
+  It displays the article image (if available), section, title, published date, author,
+   and abstract using various Text and Container widgets.*/
   final Results? popularArticles;
    NewsDetailScreen({Key? key,this.popularArticles}) : super(key: key);
 
