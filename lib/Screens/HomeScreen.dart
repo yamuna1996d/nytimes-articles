@@ -50,7 +50,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   return const Center(child: Text('No articles found.'));
                 } else {
                   return ListView.separated(
-                      itemCount: value.popularArticles.length,
+                      itemCount: value.popularArticles.length ?? 0,
                       separatorBuilder: (context, int index) {
                         return const Divider();
                       },
