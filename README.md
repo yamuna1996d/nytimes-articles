@@ -8,8 +8,7 @@ To run this app, you will need to have Flutter installed on your system. You can
 ##Installation
 * Clone this repository to your local machine using git clone https://github.com/your-username/ny_times_articles_app.git
 * Navigate to the project directory and run flutter pub get to install the required dependencies.
-*Replace YOUR_API_KEY in lib/constraints/constraints.dart with your NY Times API key. You can obtain an API key by following the instructions on this page: https://developer.nytimes.com/get-started
-Usage
+*Replace YOUR_API_KEY in lib/constraints/constraints.dart with your NY Times API key. You can obtain an API key by following the instructions on this page:    https://developer.nytimes.com/get-startedUsage
 * To run the app, connect your device to your computer and run flutter run from the project directory.
 
 ##Testing
@@ -23,4 +22,5 @@ DetailPage: Displays the details of a selected article.
 The app uses the http package to make HTTP requests to the NY Times API.
 
 ##StateManagement
+
 Provider
