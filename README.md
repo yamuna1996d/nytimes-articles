@@ -1,4 +1,4 @@
-##NY Times Articles App
+NY Times Articles App
 
 This is a simple Flutter app that uses the NY Times Most Popular Articles API to display a list of articles, and allows users to view the details of individual articles when they tap on an item in the list.
 
