@@ -18,7 +18,9 @@ To run the unit tests for this app, run flutter test from the project directory.
 This app uses a simple architecture with two screens:
 
 HomeScreen: Displays a list of articles retrieved from the NY Times Most Popular Articles API.
+
 DetailPage: Displays the details of a selected article.
+
 The app uses the http package to make HTTP requests to the NY Times API.
 
 ##StateManagement
